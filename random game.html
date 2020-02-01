@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <span id="info">
+        Нажмите кнопку
+    </span>
+    <input type="text" id="result" value="100">
+    <input type="button" value="0" onclick="gen(this)">
+    <input type="button" value="1" onclick="gen(this)">
+    <script>
+        var total = 100;
+    function gen(obj) {
+        var rn = Math.round(Math.random()*1);
+        if (obj.value == rn)
+        {
+            total=total+9999999999;
+            result.value = total + " балов. Вы выиграли!"
+        }
+        else
+        {
+            total=total-1322222115;
+            result.value = total + " балов. Вы проиграли!"
+        }
+        document.getElementById("info").innerHTML=rn;
+    }
+    </script>
+</body>
+</html>

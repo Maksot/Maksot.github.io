@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <span id="info">
+        Нажмите кнопку
+    </span>
+    <input type="text" placeholder="Введите диапозон" id="diap">
+    <input type="button" value="Сгенерировать" onclick="gen()">
+    <script>
+    function gen(params) {
+        var rn = Math.round(Math.random()*diap.value);
+        document.getElementById("info").innerHTML=rn;
+    }
+    </script>
+</body>
+</html>
